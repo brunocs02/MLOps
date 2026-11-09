@@ -1,0 +1,26 @@
+[project]
+name = "analise-sentimento"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Bruno", email = "bruno.c.sales2002@gmail.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "fastapi>=0.162.2",
+    "loguru>=0.7.3",
+    "pandas>=3.1.1",
+    "scikit-learn>=1.9.1",
+    "uvicorn>=0.54.0",
+]
+
+[project.scripts]
+analise-sentimento = "analise_sentimento:main"
+
+[build-system]
+requires = ["uv_build>=0.12.18,<0.13.0"]
+build-backend = "uv_build"
+
+[tool.uv]
+package = false
